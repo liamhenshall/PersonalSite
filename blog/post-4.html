@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113960448-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-113960448-1');
+    </script>
+    <meta charset="utf-8">
+    <title>Liam Henshall / Blog Post / Re-designing my website</title>
+    <meta content="Liam is a final year Web Development (BSc) student at the Manchester Metropolitan University. He builds stylish and affordable websites for small businesses." name="description">
+    <meta content="webdevmmu, web, design, designer, student, portfolio, liam henshall, graduate, student, affordable, responsive web design, manchester, shepshed, blog, redesign" name="keywords">
+    <meta content="index" name="robots">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,500,700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <ul class="navigation" id="navigation">
+            <li><a href="../index.html#about">Liam Henshall</a></li>
+            <li><a href="../index.html#latest-project">Latest Project</a></li>
+            <li><a href="../index.html#blog">Blog Posts</a></li>
+            <li><a href="../index.html#get-in-touch">Get In Touch</a></li>
+
+            <li class="icon">
+                <a href="javascript:void(0);" style="font-size:15px;" onclick="navigationfunction()">&#9776;</a>
+            </li>
+        </ul>
+
+        <div class="blog-post-container">
+
+            <h2>Improving to my website</h2>
+            <p>As part of my latest university submission I was required to update my website based on feedback I was provided with.</p>
+            <p>After making a few amendments to the site I found it difficult to maintain. I was no longer satisfied and decided it was time for a complete redesign.</p>
+
+            <p>My aim was to avoid images by using CSS and SVG's to make the site load quickly whilst retaining visual appeal.</p>
+
+            <p>On the previous site, the blog page featured buttons positioned in the centre of images to link the user to the various posts. However, I had only made the button clickable instead of the whole image. Truthfully I was aware of this prior to submission and gave up trying to make it work due to weird things happening when trying to wrap the div in anchor tags. Rather than trying to fix this I decided to start from scratch for two reasons, firstly the use of a button in this context is incorrect.</p>
+
+            <p>Buttons should be used as toggles within an interface, like a play button on a video, as through providing high affordance are better suited engaging the user in a particular task. Because these elements linked to other pages, this is removing the user from the context of this page which they’re currently on forwarding them to a new resource. Because of this, a clickable link would be a more appropriate solution. I decided to remove the use of high-resolution images as they were unnecessary allowing me to speed up the pages loading time. Instead, I thought it would be a better solution to use SVG’s to represent the general topic of each blog post.</p>
+
+            <p>The feedback highlighted the site some accessibility issues which mainly resulted from me copying and pasting elements causing metadata such the alt text to be incorrect where someone with a visual impairment would be given the wrong description. It can be hard to spot these issues as they only appear in the code. An area which I needed to improve upon was creating forms as mine did not comply with WebAim’s recommendations. I feel like forms can be one of the most complicated things to do with HTML due to the large number of different HTML elements which they often consist of such as forms, buttons, labels and different types of input boxes. To then select and style these elements; it requires a good understanding of how advanced CSS selectors can be used to apply the same stylings to most of the elements such as width and colour whilst some of the stylings will be unique to each particular element.</p>
+
+            <p>Then making the form responsive was stressful as it seemed to me the elements have inherently different natures. This makes me feel like the way in which these elements would be contextually used and styled was not adequately considered when the technology was introduced. An example of this which I’ve come across is where buttons don’t seem to span 100% of the container with margins applied and similarly, input labels will increase the width of the whole element when padding is applied which does not happen to other block level elements which push the content into the middle.</p>
+
+
+
+
+        </div>
+    </div>
+    <footer>
+        <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg>
+        <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/></svg>
+        <p> &copy; Liam Henshall 2018</p>
+    </footer>
+    <script>
+        function navigationfunction() {
+            var x = document.getElementById("navigation");
+            if (x.className === "navigation") {
+                x.className += " responsive";
+            } else {
+                x.className = "navigation";
+            }
+        }
+    </script>
+</body>
+
+</html>
